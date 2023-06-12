@@ -16,3 +16,7 @@ e.g. P(Cat | Dog picture) = 0.15
 
 4.BCE Cost Function
 Binary Cross Entropy二进制交叉熵函数，专门为分类任务设计，
+
+5. TensorFlow和PyTorch
+PyTorch 命令式编程，拥有动态计算图形，每次在网络运行时，容易改变他们的结构，模型运行时间较短
+TensorFlow 先定义，符号方法
