@@ -1,0 +1,18 @@
+1. Discriminator鉴别器
+鉴别器是一种类型的分类器，训练参数θ，使得Y和Y^最接近，输出不同条件的概率。
+
+P(Output Turtle/Bird/Cat/Dog/...'s 概率 | Input Cat picture) -> P(Y | X) -> P(Class | Features) 
+e.g. P(Cat | Dog picture) = 0.15
+将0.15给Generator，以提高Generator的准确率。
+
+
+2. Generator生成器
+生成器试图让结果接近1，鉴别器试图让结果接近0，使用这两者之间的差异，更新生成器的参数，随着时间的推移，知道向哪个方向移动。
+一旦得到了一个不错的生成器，可以保存生成器的参数θ，之后可以从这个安全的生成器中采样。
+
+3.
+鉴别器 P(Y | X) -> P(Class | Features) 
+生成器 P(X | Y) -> P(Features | Class) 
+
+4.BCE Cost Function
+Binary Cross Entropy二进制交叉熵函数，专门为分类任务设计，
